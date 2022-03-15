@@ -8,24 +8,27 @@
       <a-menu-item @click="onClickMenu" key="data">数据公开</a-menu-item>
       <a-menu-item @click="onClickMenu" key="recruit">社区招聘</a-menu-item>
     </a-menu>
-    <div v-if="current.includes('index') ">
-      <Index />
+    <div class="content">
+      <div v-if="current.includes('index') ">
+        <Index />
+      </div>
+      <div v-else-if="current.includes('service')">
+        <Service />
+      </div>
+      <div v-else-if="current.includes('cooperate')">
+        <Cooperate />
+      </div>
+      <div v-else-if="current.includes('business')">
+        <Business />
+      </div>
+      <div v-else-if="current.includes('data')">
+        <Data />
+      </div>
+      <div v-else-if="current.includes('recruit')">
+        <Recruit />
+      </div>
     </div>
-    <div v-else-if="current.includes('service')">
-      <Service />
-    </div>
-    <div v-else-if="current.includes('cooperate')">
-      <Cooperate />
-    </div>
-    <div v-else-if="current.includes('business')">
-      <Business />
-    </div>
-    <div v-else-if="current.includes('data')">
-      <Data />
-    </div>
-    <div v-else-if="current.includes('recruit')">
-      <Recruit />
-    </div>
+    
   </div>
   
 </template>
@@ -49,7 +52,7 @@ export default {
   },
   data(){
     return {
-      current: [],
+      current: ['index'],
       defaultSelectedKeys: defaultSelectedKeys
     }
   },
@@ -62,6 +65,16 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
+<style lang="less" scoped>
+.ant-menu-item-selected {
+  color: rgb(76, 174, 151) !important;
+  border-bottom: 2px solid rgb(76, 174, 151) !important;
+}
+.ant-menu-horizontal > .ant-menu-item:hover{
+  color: rgb(76, 174, 151) !important;
+  border-bottom: 2px solid rgb(76, 174, 151) !important;
+}
+.content{
+  padding: 30px 30px;
+}
 </style>

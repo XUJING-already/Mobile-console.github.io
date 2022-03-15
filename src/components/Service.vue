@@ -2,26 +2,34 @@
   <div class="pt18">
     <div class="line">
       <div class="item">
-        <img src="../assets/2.jpg" alt="" srcset="">
-        <p>居家养老</p>
+        <div class="image-header">
+          <img  src="../assets/2.jpg" alt="" srcset="">
+        </div>
+        <p class="mt8">居家养老</p>
       </div>
       <div class="item"></div>
       <div class="item">
-        <img src="../assets/3.jpg" alt="" srcset="">
-        <p>医养结合</p>
+        <div class="image-header">
+          <img class="imageSize" src="../assets/3.jpg" alt="" srcset="">
+        </div>
+        <p class="mt8">医养结合</p>
       </div>
       <div class="item"></div>
     </div>
     <div class="line">
       <div class="item"></div>
       <div class="item">
-        <img src="../assets/4.jpg" alt="" srcset="">
-        <p>社区养老</p>
+        <div class="image-header">
+          <img class="imageSize" src="../assets/4.jpg" alt="" srcset="">
+        </div>
+        <p class="mt8">社区养老</p>
       </div>
       <div class="item"></div>
       <div class="item">
-        <img src="../assets/5.jpg" alt="" srcset="">
-        <p>适老化改造</p>
+        <div class="image-header">
+          <img class="imageSize" src="../assets/5.jpg" alt="" srcset="">
+        </div>
+        <p class="mt8">适老化改造</p>
       </div>
     </div>
   </div>
@@ -38,7 +46,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
+<style lang="less" scoped>
 .line{
   display: flex;
 }
@@ -48,6 +56,20 @@ export default {
 }
 .line .item img{
   width: 100%;
+}
+
+.image-header{
+  position: relative;
+  width: 100%;
+  height: 0px;
+  padding-top: 100%;
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 .line .item p{
   position: absolute;

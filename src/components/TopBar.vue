@@ -6,13 +6,13 @@
     </div>
     <div class="right">
       <div>
-        <a-icon class="ft24 mr8" type="wechat" />
-        <a-icon class="ft24 mr8" type="weibo-circle" />
-        <a-icon class="ft24 mr8" type="qq" />
+        <a-icon class="ft24 mr14" type="wechat" />
+        <a-icon class="ft24 mr14" type="weibo-circle" />
+        <a-icon class="ft24 mr18" type="qq" />
       </div>
       <div>
-        <div>联系热线：</div>
-        <div>xxx-xxxxxxxx</div>
+        <div style="text-align: left">联系热线：</div>
+        <div>18863781927 17604896136</div>
       </div>
     </div>
   </div>
@@ -25,7 +25,7 @@ export default {
   }
 }
 </script>
-<style scoped>
+<style lang="less" scoped>
 .container{
   display: flex;
   justify-content: space-between;

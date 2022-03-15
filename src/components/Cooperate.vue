@@ -1,12 +1,14 @@
 <template>
   <div class="container pt18">
     <img style="width: 50%" src="../assets/a.jpeg" alt="">
-    <div>
-      <p>联系人：XXX</p>
-      <p>联系方式：</p>
-      <p>00000000000</p>
-      <p>0000-00000000</p>
-      <p>00000000000@163.com</p>
+    <div style="text-align: left">
+      <p>联系人：李明智 颉宗旺 李勇毅</p>
+      <p>联系方式：18863781927</p>
+      <div style="margin-left: 72px">
+        <p>17604896136</p>
+        <p>17647611567</p>
+      </div>
+      <p>邮箱：296307653@qq.com</p>
     </div>
   </div>
 </template>

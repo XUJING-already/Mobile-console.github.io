@@ -1,9 +1,9 @@
 <template>
   <div class="main">
-    <div>
+    <div style="width: 40%">
       <div id="charts"></div>
     </div>
-    <div>
+    <div style="width: 40%">
       <a-table
         :columns="columns"
         :data-source="data"
@@ -20,14 +20,18 @@ export default {
   data(){
     return {
       option: {
-        xAxis: {
-          data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+        title: {
+          text: '社区参与度'
         },
-        yAxis: {},
+        xAxis: {
+          data: ['设施', '服务', '饮食', '娱乐', '舒适度', '人性化', '适家化']
+        },
+        yAxis: {
+        },
         series: [
           {
             type: 'bar',
-            data: [23, 24, 18, 25, 27, 28, 25]
+            data: [15, 30, 45, 60, 75, 90]
           }
         ]
       },
@@ -43,22 +47,26 @@ export default {
             {
               title: '一对一服务',
               dataIndex: 'oneByOne',
-              key: 'oneByOne'
+              key: 'oneByOne',
+              align: 'center'
             },
             {
               title: '缴纳费用',
               dataIndex: 'fee',
-              key: 'fee'
+              key: 'fee',
+              align: 'center'
             },
             {
               title: '开支',
               dataIndex: 'spend',
-              key: 'spend'
+              key: 'spend',
+              align: 'center'
             },
             {
               title: '结余',
               dataIndex: 'surplus',
-              key: 'surplus'
+              key: 'surplus',
+              align: 'center'
             },
           ]
         }
@@ -66,24 +74,24 @@ export default {
       data: [
         {
           name: '张三',
-          oneByOne: '',
-          fee: '',
-          spend: '',
-          surplus: ''
+          oneByOne: '陈六',
+          fee: '4000',
+          spend: '2700',
+          surplus: '1300'
         },
         {
           name: '李四',
-          oneByOne: '',
-          fee: '',
-          spend: '',
-          surplus: ''
+          oneByOne: '董七',
+          fee: '2000',
+          spend: '1300',
+          surplus: '700'
         },
         {
           name: '王五',
-          oneByOne: '',
-          fee: '',
-          spend: '',
-          surplus: ''
+          oneByOne: '赵八',
+          fee: '3500',
+          spend: '2300',
+          surplus: '1200'
         }
       ]
     }
@@ -103,7 +111,7 @@ export default {
   justify-content: space-around;
 }
 #charts{
-  width: 300px;
+  width: 100%;
   height: 500px;
 }
 </style>
