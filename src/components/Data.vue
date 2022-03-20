@@ -73,22 +73,22 @@ export default {
       ],
       data: [
         {
-          name: '张三',
-          oneByOne: '陈六',
+          name: '张国庆',
+          oneByOne: '李东生',
           fee: '4000',
           spend: '2700',
           surplus: '1300'
         },
         {
-          name: '李四',
-          oneByOne: '董七',
+          name: '李淑芬',
+          oneByOne: '董红',
           fee: '2000',
           spend: '1300',
           surplus: '700'
         },
         {
-          name: '王五',
-          oneByOne: '赵八',
+          name: '陈光明',
+          oneByOne: '赵五四',
           fee: '3500',
           spend: '2300',
           surplus: '1200'
