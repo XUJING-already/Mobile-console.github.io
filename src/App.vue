@@ -1,19 +1,13 @@
 <template>
   <div id="app">
-    <TopBar />
-    <MenuPage msg="Welcome to Your Vue.js App"/>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import MenuPage from './components/MenuPage.vue'
-import TopBar from './components/TopBar.vue'
-
 export default {
   name: 'App',
   components: {
-    MenuPage,
-    TopBar
   }
 }
 </script>
