@@ -1,14 +1,14 @@
 <template>
   <div class="pt18">
     <div class="line">
-      <div class="item">
+      <div class="item" @click="onClickService1">
         <div class="image-header">
           <img  src="../assets/2.jpg" alt="" srcset="">
         </div>
         <p class="mt8">居家养老</p>
       </div>
       <div class="item"></div>
-      <div class="item">
+      <div class="item"  @click="onClickService2">
         <div class="image-header">
           <img class="imageSize" src="../assets/3.jpg" alt="" srcset="">
         </div>
@@ -18,14 +18,14 @@
     </div>
     <div class="line">
       <div class="item"></div>
-      <div class="item">
+      <div class="item"  @click="onClickService3">
         <div class="image-header">
           <img class="imageSize" src="../assets/4.jpg" alt="" srcset="">
         </div>
         <p class="mt8">社区养老</p>
       </div>
       <div class="item"></div>
-      <div class="item">
+      <div class="item"  @click="onClickService4">
         <div class="image-header">
           <img class="imageSize" src="../assets/5.jpg" alt="" srcset="">
         </div>
@@ -40,6 +40,20 @@ export default {
   name: 'Service',
   data(){
     return {
+    }
+  },
+  methods:{
+    onClickService1(){
+      this.$router.push('service1')
+    },
+    onClickService2(){
+      this.$router.push('service2')
+    },
+    onClickService3(){
+      this.$router.push('service3')
+    },
+    onClickService4(){
+      this.$router.push('service4')
     }
   }
 }
